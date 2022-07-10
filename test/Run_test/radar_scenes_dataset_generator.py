@@ -969,7 +969,7 @@ class Radar_Scenes_Test_Dataset(Dataset):
 
 if __name__ == "__main__":
     ''' dataset loading '''
-    datapath = '/home/jc604393/test/SAMPLE_DATA' # C:/Users/liyan/Desktop/Thesis/Thesis project/SAMPLE_DATA
+    datapath = '/home/jc604393/Desktop/test/SAMPLE_DATA' # C:/Users/liyan/Desktop/Thesis/Thesis project/SAMPLE_DATA
     multiframe = True
     radar_scenes_dataset = Radar_Scenes_Train_Dataset(datapath, transforms=None, sample_size=100, LSTM=False, non_static=True, multiframe=multiframe)
     trainDataLoader = DataLoader(radar_scenes_dataset, batch_size=1, shuffle=True, num_workers=4)
