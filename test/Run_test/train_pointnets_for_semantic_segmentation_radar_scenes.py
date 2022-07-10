@@ -30,7 +30,7 @@ from pointnet2_sem_seg import get_pointnet2_for_semantic_segmentation_model, get
 
 def parse_args():
     parser = argparse.ArgumentParser('PointNet')
-    parser.add_argument('--datapath',           default='C:/Users/liyan/Desktop/Thesis/Thesis project/SAMPLE_DATA',# /home/jc604393/SAMPLE_DATA
+    parser.add_argument('--datapath',           default='/home/jc604393/test/SAMPLE_DATA',#  C:/Users/liyan/Desktop/Thesis/Thesis project/SAMPLE_DATA
                                                                             type=str,   help="dataset main folder")
     parser.add_argument('--numclasses',         default=5,  # 6
                         type=int,   help='number of classes in the dataset')
